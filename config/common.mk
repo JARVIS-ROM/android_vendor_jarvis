@@ -64,11 +64,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Include AOSP audio files
 include vendor/jarvis/config/aosp_audio.mk
 
-# TWRP
-ifeq ($(WITH_TWRP),true)
-include vendor/jarvis/config/twrp.mk
-endif
-
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
