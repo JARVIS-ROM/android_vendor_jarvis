@@ -79,13 +79,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     Updater
 
-# Filesystems tools
-PRODUCT_PACKAGES += \
-    fsck.ntfs \
-    mke2fs \
-    mkfs.ntfs \
-    mount.ntfs
-
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
