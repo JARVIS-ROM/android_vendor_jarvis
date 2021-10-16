@@ -1,15 +1,5 @@
-# Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common jarvis stuff
+$(call inherit-product, vendor/jarvis/config/common.mk)
 
-# Inherit Lineage atv device tree
-$(call inherit-product, device/lineage/atv/lineage_atv.mk)
-
-# AOSP packages
-PRODUCT_PACKAGES += \
-    LeanbackIME
-
-# Lineage packages
-PRODUCT_PACKAGES += \
-    LineageCustomizer
-
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/tv
+# Inherit jarvis atv device tree
+$(call inherit-product, device/jarvis/atv/jarvis_atv.mk)

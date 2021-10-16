@@ -1,6 +1,2 @@
-# Inherit mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mini.mk)
-
-# Required packages
-PRODUCT_PACKAGES += \
-    LatinIME
+# Inherit mini common jarvis stuff
+$(call inherit-product, vendor/jarvis/config/common_mini.mk)

@@ -1,5 +1,5 @@
-# Set Lineage specific identifier for Android Go enabled products
+# Set jarvis specific identifier for Android Go enabled products
 PRODUCT_TYPE := go
 
-# Inherit full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit full common jarvis stuff
+$(call inherit-product, vendor/jarvis/config/common_full_phone.mk)

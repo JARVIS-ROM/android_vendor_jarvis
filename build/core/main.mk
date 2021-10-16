@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include JARVIS versions
+include $(TOPDIR)vendor/jarvis/build/core/main_version.mk
