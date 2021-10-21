@@ -16,12 +16,12 @@
 # -----------------------------------------------------------------
 # JARVIS OTA update package
 
-JARVIS_TARGET_PACKAGE := $(PRODUCT_OUT)/jarvis-$(JARVIS_VERSION).zip
+JARVIS_TARGET_PACKAGE := $(PRODUCT_OUT)/JARVIS-$(JARVIS_VERSION)-$(JARVIS_BUILD)-$(JARVIS_BUILDTYPE)-$(shell date -u +%d%m%y).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
-.PHONY: bacon
-bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
+.PHONY: jarvis
+jarvis: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(JARVIS_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(JARVIS_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(JARVIS_TARGET_PACKAGE).sha256sum
 	@echo "Package Complete: $(JARVIS_TARGET_PACKAGE)" >&2
