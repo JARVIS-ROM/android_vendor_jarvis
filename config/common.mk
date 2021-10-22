@@ -80,6 +80,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# JARVIS packages
+PRODUCT_PACKAGES += \
+    Updater
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.ntfs \
