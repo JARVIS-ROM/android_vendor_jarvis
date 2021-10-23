@@ -115,5 +115,5 @@ endif
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/jarvis/overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/jarvis/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/jarvis/overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/jarvis/overlays
