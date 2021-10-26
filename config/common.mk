@@ -76,8 +76,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # JARVIS packages
+ifneq ($(JARVIS_BUILDTYPE), unofficial)
 PRODUCT_PACKAGES += \
     Updater
+endif
 
 # Openssh
 PRODUCT_PACKAGES += \
