@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # JARVIS OTA update package
 
-JARVIS_TARGET_PACKAGE := $(PRODUCT_OUT)/JARVIS-$(JARVIS_VERSION)-$(JARVIS_BUILD)-$(JARVIS_BUILDTYPE)-$(shell date -u +%d%m%y).zip
+JARVIS_TARGET_PACKAGE := $(PRODUCT_OUT)/JARVIS-$(JARVIS_VERSION)-$(JARVIS_VERSION_FULL).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
