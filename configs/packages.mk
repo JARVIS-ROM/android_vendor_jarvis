@@ -36,7 +36,8 @@ PRODUCT_PACKAGES += \
 # Themes
 PRODUCT_PACKAGES += \
     ThemesStub \
-    ThemePicker
+    ThemePicker \
+    AndroidBlackThemeOverlay
 
 # Extra tools
 PRODUCT_PACKAGES += \
