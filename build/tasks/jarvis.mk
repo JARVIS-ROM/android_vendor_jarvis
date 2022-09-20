@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-AOSP_BASE := 13.0
-COMPILATION_DATE := $(shell date -u +%d%m%y)
-RELEASE_TYPE ?= GApps
-RELEASE := $(AOSP_BASE)-$(RELEASE_TYPE)-$(COMPILATION_DATE)
+# JARVIS OTA update package
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-  ro.jarvis.version=$(AOSP_BASE) \
-  ro.jarvis.releasetype=$(RELEASE_TYPE) \
-  ro.modversion=$(AOSP_BASE)
+JARVIS_TARGET_PACKAGE := $(PRODUCT_OUT)/JARVIS-$(RELEASE).zip
+
+.PHONY: jarvis
+jarvis: $(INTERNAL_OTA_PACKAGE_TARGET)
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(JARVIS_TARGET_PACKAGE)
+	$(hide) $(MD5SUM) $(JARVIS_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(JARVIS_TARGET_PACKAGE).md5sum
+	@echo "Package Complete: $(JARVIS_TARGET_PACKAGE)" >&2
