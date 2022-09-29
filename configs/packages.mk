@@ -101,3 +101,7 @@ PRODUCT_PACKAGES += \
 # World APN list
 PRODUCT_PACKAGES += \
     apns-conf.xml
+
+# Updater
+PRODUCT_PACKAGES += \
+    Updater

@@ -74,3 +74,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
+
+# Updater
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+   jarvis.updater.uri=https://downloads.sourceforge.net/project/jarvisrom/$(AOSP_BASE)/$(CURRENT_DEVICE)/$(RELEASE_TYPE)/update.json
