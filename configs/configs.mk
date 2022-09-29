@@ -14,6 +14,10 @@
 
 include vendor/jarvis/configs/version.mk
 
+ifeq ($(RELEASE_TYPE),GApps)
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+endif
+
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/jarvis/overlay/common
 
