@@ -35,7 +35,8 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    ThemesStub
+    ThemesStub \
+    ThemePicker
 
 # Extra tools
 PRODUCT_PACKAGES += \
