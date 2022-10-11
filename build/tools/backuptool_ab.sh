@@ -5,7 +5,7 @@
 
 export S=/system
 export C=/postinstall/tmp/backupdir
-export V=v13.0
+export V=13.0
 
 export ADDOND_VERSION=3
 
@@ -52,13 +52,9 @@ restore_addon_d() {
 # Proceed only if /system is the expected major and minor version
 check_prereq() {
 # If there is no build.prop file the partition is probably empty.
-if [ ! -r /system/build.prop ]; then
-  echo "Backup/restore is not possible. Partition is probably empty"
+if [ ! -r /system/50-jarvis.sh ]; then
+  echo "Backup/restore is not possible."
   return 1
-fi
-if ! grep -q "^ro.modversion=$V.*" /system/etc/prop.default /system/build.prop; then
-  echo "Backup/restore is not possible. Incompatible ROM version: $V"
-  return 2
 fi
 return 0
 }
