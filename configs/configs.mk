@@ -31,6 +31,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGES += \
     NetworkStackOverlay
 
+# bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/jarvis/prebuilt/bootanimation/bootanimation_1080x2400.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
