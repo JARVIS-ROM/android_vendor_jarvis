@@ -131,3 +131,7 @@ PRODUCT_PACKAGES += \
 # Updater
 PRODUCT_PACKAGES += \
     Updater
+
+# Extra
+PRODUCT_PACKAGES += \
+    Aperture
