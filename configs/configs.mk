@@ -19,7 +19,7 @@ $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 endif
 
 ifeq ($(RELEASE_TYPE),microG)
-$(call inherit-product, vendor/microg/microg.mk)
+$(call inherit-product, vendor/microg/products/gms.mk)
 endif
 
 PRODUCT_PACKAGE_OVERLAYS += \
