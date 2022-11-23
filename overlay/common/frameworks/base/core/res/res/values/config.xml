@@ -112,4 +112,12 @@
 
     <!-- Default component for QR code scanner -->
     <string name="config_defaultQrCodeComponent">org.lineageos.aperture/.QrScannerActivity</string>
+
+    <!-- Sets the package name for location extra packages -->
+    <string-array name="config_locationExtraPackageNames" translatable="false">
+        <item>com.google.android.gms.location.history</item>
+        <item>com.qualcomm.qti.cne</item>
+        <item>com.shannon.imsservice</item>
+        <item>com.android.bluetooth</item>
+    </string-array>
 </resources>
