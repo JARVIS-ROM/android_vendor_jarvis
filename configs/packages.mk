@@ -140,4 +140,5 @@ PRODUCT_PACKAGES += \
 
 # Extra
 PRODUCT_PACKAGES += \
-    Aperture
+    Aperture \
+    Etar
