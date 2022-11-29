@@ -106,9 +106,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Fonts
-include vendor/jarvis/configs/fonts.mk
-
 # Packages
 include vendor/jarvis/configs/packages.mk
 
@@ -117,3 +114,6 @@ include vendor/jarvis/configs/properties.mk
 
 # Sounds
 include vendor/jarvis/configs/sounds.mk
+
+# Theming
+include vendor/jarvis/configs/theming.mk

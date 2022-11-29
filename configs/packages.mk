@@ -33,30 +33,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NavigationBarNoHintOverlay
 
-# Theming
-PRODUCT_PACKAGES += \
-    ThemesStub \
-    ThemePicker \
-    AndroidBlackThemeOverlay
-
-# Icon Shapes
-PRODUCT_PACKAGES += \
-    IconShapeCloudyOverlay \
-    IconShapeCylinderOverlay \
-    IconShapeFlowerOverlay \
-    IconShapeHeartOverlay \
-    IconShapeHexagonOverlay \
-    IconShapeLeafOverlay \
-    IconShapePebbleOverlay \
-    IconShapeRoundedHexagonOverlay \
-    IconShapeRoundedRectOverlay \
-    IconShapeSquareOverlay \
-    IconShapeSquircleOverlay \
-    IconShapeStretchedOverlay \
-    IconShapeTaperedRectOverlay \
-    IconShapeTeardropOverlay \
-    IconShapeVesselOverlay
-
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
