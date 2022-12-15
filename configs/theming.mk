@@ -124,6 +124,6 @@ PRODUCT_PACKAGES += \
 
 # Theming
 PRODUCT_PACKAGES += \
-    ThemesStub \
+    JarvisThemesStub \
     ThemePicker \
     AndroidBlackThemeOverlay
