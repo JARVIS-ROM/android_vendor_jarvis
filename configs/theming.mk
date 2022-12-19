@@ -32,7 +32,8 @@ PRODUCT_PACKAGES += \
     FontGoogleSansLatoOverlay \
     FontInterOverlay \
     FontOppoSansOverlay \
-    FontRubikRubikOverlay
+    FontRubikRubikOverlay \
+    FontHarmonyOSSansOverlay
 
 # Icon Packs
 PRODUCT_PACKAGES += \
