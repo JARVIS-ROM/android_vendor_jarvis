@@ -111,4 +111,5 @@ PRODUCT_PACKAGES += \
 # Extra
 PRODUCT_PACKAGES += \
     Aperture \
-    Etar
+    Etar \
+    ParallelSpace

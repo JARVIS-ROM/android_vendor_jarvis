@@ -31,8 +31,8 @@
         <!-- Enable smart actions in the clipboard overlay -->
         <item>systemui/clipboard_overlay_show_actions=true</item>
 
-        <!-- Enable the new and advanced Privacy Hub -->
-        <item>privacy/safety_center_is_enabled=true</item>
+        <!-- Disable the new and advanced Privacy Hub -->
+        <item>privacy/safety_center_is_enabled=false</item>
 
         <!--
             Keep track of more app ops for privacy dashboard display.
